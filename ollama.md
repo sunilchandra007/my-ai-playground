@@ -31,6 +31,9 @@ curl http://localhost:11434/api/generate -d '{
   "prompt": "Write me a function that outputs the fibonacci sequence"
 }'
 
+#oterm - terminal based client for ollama
+https://github.com/ggozad/oterm
+
 
 Reference 
 
