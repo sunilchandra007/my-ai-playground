@@ -20,3 +20,13 @@ ollama run codellama "Write a Python script to analyze stock prices"
 
 # chat with a model
 curl http://localhost:11434/api/chat -d '{"model": "codellama", "messages": [{"role": "user", "content": "5 words about sun"}]}'
+
+curl -X POST http://localhost:11434/api/chat -d '{
+  "model": "codellama",
+  "messages": [{"role": "user", "content": "5 words about sun"}]
+}'
+
+curl -X POST http://localhost:11434/api/generate -d '{
+  "model": "codellama",
+  "prompt": "Write me a function that outputs the fibonacci sequence"
+}'
