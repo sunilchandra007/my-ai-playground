@@ -7,4 +7,5 @@
 - [claude](https://claude.ai)
 - [perplexity](https://perplexity.ai)
 - [Sarvam-M](https://dashboard.sarvam.ai)
+- [qwen](https://chat.qwen.ai)
 
