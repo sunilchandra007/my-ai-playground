@@ -1,7 +1,7 @@
 - [Firebase Studio](https://studio.firebase.google.com)
 - [AI Studio](https://aistudio.google.com)
 - [stitch](https://stitch.withgoogle.com)
-- [colab](https://colab.research.google.com)
+- [Colab - hosted Jupyter Notebook](https://colab.research.google.com)
 - [bolt.new](https://bolt.new)
 - [sutra](https://chat.two.ai)
 - [lovable](https://lovable.app)
