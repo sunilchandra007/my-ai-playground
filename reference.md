@@ -1,9 +1,12 @@
+## Google
+
 - [Firebase Studio](https://studio.firebase.google.com)
 - [AI Studio](https://aistudio.google.com)
 - [stitch](https://stitch.withgoogle.com)
 - [Colab - hosted Jupyter Notebook](https://colab.google)
 - [opal](https://opal.withgoogle.com/landing/)
 
+## Others
 
 - [bolt.new](https://bolt.new)
 - [sutra](https://chat.two.ai)
