@@ -15,5 +15,5 @@
 - [perplexity](https://perplexity.ai)
 - [Sarvam-M](https://dashboard.sarvam.ai)
 - [qwen](https://chat.qwen.ai)
-- 
+- [mistral](https://chat.mistral.ai/chat)
 
