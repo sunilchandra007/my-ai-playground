@@ -28,7 +28,7 @@ curl http://localhost:11434/api/chat -d '{
       "role": "user",
       "content": "5 words about sun"
   }]
-}'
+}' | jq .
 ```
 
 ```bash
