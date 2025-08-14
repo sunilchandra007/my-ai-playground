@@ -38,7 +38,8 @@ curl http://localhost:11434/api/chat -d '{
 curl http://localhost:11434/api/generate -d '{
   "model": "codellama",
   "prompt": "Write me a function that outputs the fibonacci sequence",
-  "stream": false  
+  "format": "json",
+  "stream": false 
 }' | jq .
 ```
 
