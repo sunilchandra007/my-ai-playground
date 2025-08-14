@@ -26,10 +26,13 @@ curl http://localhost:11434/api/chat -d '{
   "messages": [{"role": "user", "content": "5 words about sun"}]
 }'
 
+```bash
 curl http://localhost:11434/api/generate -d '{
   "model": "codellama",
-  "prompt": "Write me a function that outputs the fibonacci sequence"
+  "prompt": "Write me a function that outputs the fibonacci sequence",
+  "stream": false  
 }'
+```
 
 #oterm - terminal based client for ollama
 https://github.com/ggozad/oterm
