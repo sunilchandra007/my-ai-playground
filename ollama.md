@@ -20,6 +20,8 @@ ollama run codellama "Write a Python script to analyze stock prices"
 
 # chat with a model
 
+https://github.com/ollama/ollama/blob/main/docs/api.md
+
 ```bash
 curl http://localhost:11434/api/chat -d '{
   "model": "codellama",
