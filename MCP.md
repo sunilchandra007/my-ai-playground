@@ -49,7 +49,5 @@ Clients can also expose primitives to enable richer interactions initiated by se
 
 - **📋 Logging**  
   Servers can send log messages to clients for debugging and monitoring.
-
-
-
+      Link: modelcontextprotocol.io/introduction
 
