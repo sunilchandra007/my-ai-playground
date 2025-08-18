@@ -49,5 +49,9 @@ Clients can also expose primitives to enable richer interactions initiated by se
 
 - **📋 Logging**  
   Servers can send log messages to clients for debugging and monitoring.
-      Link: modelcontextprotocol.io/introduction
 
+---
+Reference - MCP Explorer
+
+- https://mcp.azure.com/ - helps in testing MCP Server
+- https://code.visualstudio.com/mcp
