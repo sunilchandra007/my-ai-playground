@@ -1,6 +1,6 @@
 # 🧠 Retrieval-Augmented Generation (RAG)
 
-**Retrieval-Augmented Generation (RAG)** is a powerful technique that enhances the **quality** and **relevance** of outputs from LLMs(pre-trained) by referencing authoritative **external knowledge bases** before generating a response.
+**RAG** is a powerful technique that enhances the **quality** and **relevance** of outputs from LLMs(pre-trained) by referencing authoritative **external knowledge bases** before generating a response.
 
 ---
 
