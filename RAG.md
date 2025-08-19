@@ -1,6 +1,6 @@
 # 🧠 Retrieval-Augmented Generation (RAG)
 
-**Retrieval-Augmented Generation (RAG)** is a powerful technique that enhances the quality and relevance of outputs from Large Language Models (LLMs) by referencing authoritative **external knowledge bases** before generating a response.
+**Retrieval-Augmented Generation (RAG)** is a powerful technique that enhances the **quality** and **relevance** of outputs from LLMs(pre-trained) by referencing authoritative **external knowledge bases** before generating a response.
 
 ---
 
@@ -10,14 +10,12 @@ LLMs are trained on massive datasets and use billions of parameters to perform t
 
 RAG improves LLM performance by enabling them to **retrieve relevant information**, **domain-specific** or **organization-specific** knowledge from trusted sources **outside their training data** without retraining the models. 
 
-This ensures that responses are:
-
+This ensures that responses are
 - ✅ Accurate  
 - ✅ Contextually relevant  
 - ✅ Up-to-date  
 
 This makes RAG:
-
 - 💰 Cost-effective  
 - 📈 Scalable  
 - 🛠️ Customizable  
