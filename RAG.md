@@ -30,12 +30,14 @@ RAG is ideal for scenarios where:
 - 🔐 Responses must be grounded in proprietary or verified data  
 - 🎯 Accuracy and trustworthiness are critical  
 
+## 🔗 Use Cases
+
+- 🛎️ Customer support using internal documentation  
+- ⚖️ Legal or medical advice based on verified sources  
+- 🏢 Enterprise search and Q&A  
+- 🛠️ Technical troubleshooting with product manuals
+
 ---
-
-## ✅ Summary
-
-RAG empowers LLMs to deliver **more reliable**, **up-to-date**, **domain-specific**, and **context-sensitive** outputs.
-
 ---
 
 ## 🌟 Benefits of RAG
@@ -58,9 +60,10 @@ RAG empowers LLMs to deliver **more reliable**, **up-to-date**, **domain-specifi
 
 ---
 
-## 🔗 Use Cases
+## ✅ Summary
 
-- 🛎️ Customer support using internal documentation  
-- ⚖️ Legal or medical advice based on verified sources  
-- 🏢 Enterprise search and Q&A  
-- 🛠️ Technical troubleshooting with product manuals  
+RAG empowers LLMs to deliver **more reliable**, **up-to-date**, **domain-specific**, and **context-sensitive** outputs.
+
+Reference
+- https://aws.amazon.com/what-is/retrieval-augmented-generation/
+- https://www.geeksforgeeks.org/nlp/what-is-retrieval-augmented-generation-rag/
