@@ -64,6 +64,12 @@ RAG is ideal for scenarios where:
 
 RAG empowers LLMs to deliver **more reliable**, **up-to-date**, **domain-specific**, and **context-sensitive** outputs.
 
-Reference
+## Key terms
+- Vector Database | Vector Search | Semantic Search
+- Embeddings | **Embedding models**
+  - converts data into numerical representations and stores it in a vector database
+  - creates a knowledge library that the generative AI models can understand.
+  
+## Reference
 - https://aws.amazon.com/what-is/retrieval-augmented-generation/
 - https://www.geeksforgeeks.org/nlp/what-is-retrieval-augmented-generation-rag/
