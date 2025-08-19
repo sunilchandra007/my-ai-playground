@@ -1,6 +1,6 @@
 # 🧠 Retrieval-Augmented Generation (RAG)
 
-**RAG** is a powerful technique that enhances the **quality** and **relevance** of outputs from LLMs(pre-trained) by referencing authoritative **external knowledge bases** before generating a response.
+**RAG** is a powerful technique that enhances the **quality** and **relevance** of outputs from LLMs(pre-trained) by referencing trusted and authoritative **external knowledge bases** before generating a response.
 
 ---
 
@@ -69,6 +69,8 @@ RAG empowers LLMs to deliver **more reliable**, **up-to-date**, **domain-specifi
 - Embeddings | **Embedding models**
   - converts data into numerical representations and stores it in a vector database
   - creates a knowledge library that the generative AI models can understand.
+- Grounding Data 
+  - refers to the trusted, authoritative information sources that the model uses to anchor its responses.
   
 ## Reference
 - https://aws.amazon.com/what-is/retrieval-augmented-generation/
