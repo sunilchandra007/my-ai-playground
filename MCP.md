@@ -55,3 +55,5 @@ Reference - MCP Explorer
 
 - https://mcp.azure.com/ - helps in testing MCP Server
 - https://code.visualstudio.com/mcp
+- [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/tools/)
+- [GitHub Remote MCP Server](https://github.com/github/github-mcp-server)
