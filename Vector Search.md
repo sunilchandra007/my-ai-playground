@@ -1,6 +1,6 @@
 ## 🧠 Vector Search
 
-Helps to find semantically similar items (like documents, images, or queries) by comparing ** **embedding vectors**.
+Helps to find semantically similar items (like documents, images, or queries) by comparing **embedding vectors**.
 ---
 
 ### 🔹 1. Input Stage
