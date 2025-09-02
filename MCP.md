@@ -57,3 +57,5 @@ Reference - MCP Explorer
 - https://code.visualstudio.com/mcp
 - [Azure MCP Server](https://learn.microsoft.com/en-us/azure/developer/azure-mcp-server/tools/)
 - [GitHub Remote MCP Server](https://github.com/github/github-mcp-server)
+- [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners)
+- [modelcontextprotocol/python-sdk](https://github.com/modelcontextprotocol/python-sdk)
