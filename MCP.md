@@ -59,3 +59,4 @@ Reference - MCP Explorer
 - [GitHub Remote MCP Server](https://github.com/github/github-mcp-server)
 - [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners)
 - [modelcontextprotocol/python-sdk](https://github.com/modelcontextprotocol/python-sdk)
+- [Creating Your First MCP Server](https://www.youtube.com/watch?v=44SUYJ9fqxs)
