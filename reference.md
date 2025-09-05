@@ -16,4 +16,5 @@
 - [Sarvam-M](https://dashboard.sarvam.ai)
 - [qwen](https://chat.qwen.ai)
 - [mistral](https://chat.mistral.ai/chat)
+- [txyz.ai](https://www.txyz.ai/) for research
 
