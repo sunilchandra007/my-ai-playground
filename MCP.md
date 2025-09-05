@@ -8,6 +8,13 @@ The **Model Context Protocol (MCP)** is an open standard that defines how AI mod
 - Facilitates building **agents and workflows** on top of LLMs.
 - Allows models to **read data** and **execute actions** via a universal connector.
 
+### 🔗 Transport Mode
+- STDIO (for local communication)
+- HTTP (for remote network communication)
+
+### 🔗 Session State
+- MCP is stateful by default - MCP server maintains session state
+  
 📖 **Reference**: [modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction)
 
 ---
@@ -28,7 +35,8 @@ Servers can expose the following core primitives:
   _Examples: file contents, database records, API responses_
 
 - **📝 Prompts**  
-  Reusable templates that structure interactions with language models  
+  - Reusable templates that structure interactions with language models
+  - AI guidance templates for interactions
   _Examples: system prompts, few-shot examples_
 
 Each primitive supports:
