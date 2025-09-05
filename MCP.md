@@ -68,6 +68,14 @@ Clients can also expose primitives to enable richer interactions initiated by se
   Servers can send log messages to clients for debugging and monitoring.
 
 ---
+
+## 🧩 MCP Inspector
+
+```bash
+npx @modelcontextprotocol/inspector
+```
+
+---
 Reference - MCP Explorer
 
 - https://mcp.azure.com/ - helps in testing MCP Server
