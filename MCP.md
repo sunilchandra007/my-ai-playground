@@ -39,9 +39,31 @@ Servers can expose the following core primitives:
   Executable functions that AI applications can invoke to perform actions  
   _Examples: file operations, API calls, database queries_
 
+  ```python
+  @mcp.tool()
+  def search_flights(origin: str, destination: str) -> dict:
+      """Search for flights between two airports"""
+      return {
+          "flights": [
+              {"id": "FL123", "origin": origin, "destination": destination, "price": 299},
+              {"id": "FL456", "origin": origin, "destination": destination, "price": 399}
+          ]
+      }
+  ```
+
 - **📚 Resources**  
   Data sources that provide contextual information to AI applications  
   _Examples: file contents, database records, API responses_
+  ```python
+  @mcp.resource("file://airports")
+  def get_airports():
+      """Get list of available airports"""
+      return {
+          "LAX": {"name": "Los Angeles International", "city": "Los Angeles"},
+          "JFK": {"name": "John F. Kennedy International", "city": "New York"},
+          "LHR": {"name": "London Heathrow", "city": "London"}
+      }
+  ```
 
 - **📝 Prompts**  
   - Reusable templates that structure interactions with language models
