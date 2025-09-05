@@ -9,4 +9,7 @@ Type Annotation
 - Lambda function
 
 Elements of LangGraph
-- State
+- State - stores the context of the entire application
+- Node - executes specific tasks
+- Graph -
+- Edge - connection between nodes that determine the flow of the execution
