@@ -13,3 +13,6 @@ Elements of LangGraph
 - Node - executes specific tasks
 - Graph -
 - Edge - connection between nodes that determine the flow of the execution
+
+More >>
+- [Agentic AI with LangChain and LangGraph](https://www.coursera.org/learn/agentic-ai-with-langchain-and-langgraph)
