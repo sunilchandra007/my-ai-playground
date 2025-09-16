@@ -16,3 +16,4 @@ Elements of LangGraph
 
 More >>
 - [Agentic AI with LangChain and LangGraph](https://www.coursera.org/learn/agentic-ai-with-langchain-and-langgraph)
+- [Open Agent Platform](https://oap.langchain.com/) 
