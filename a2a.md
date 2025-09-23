@@ -2,6 +2,13 @@
 
 - An **open standard** to enable seamless **communication** and **collaboration** between AI agent
 - Provides a **common language** for agents built using diverse framework(Goodle ADK) and different vendors, equipped with any tool/MCP 
+
+---
+
+## 📘 Agent Card
+- Similar to business card
+- describes what can it do, lists the skills
+- hosted at /.well-known/agent.json
 ---
 
 ## 📘 Overview
