@@ -37,7 +37,7 @@ All messages follow a structured envelope format:
   "type": "message_type",
   "payload": { ... }
 }
-
+```
 ---
 
 ## Reference
