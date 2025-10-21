@@ -1,11 +1,11 @@
 # 🤖 Agent2Agent (A2A) Protocol
 
-- An **open standard** to enable seamless **communication** and **collaboration** between AI agent
+- An **open standard** designed to let API agents **communicate**, **collaborate** and **coordinate** - securely and seamlessly
 - Provides a **common language** for agents built using diverse framework(Goodle ADK) and different vendors, equipped with any tool/MCP 
 
 ---
 
-## 📘 Agent Card
+## Agent Card: The digital business card
 - Similar to business card
 - describes what can it do, lists the skills
 - hosted at /.well-known/agent.json
@@ -42,6 +42,9 @@ All messages follow a structured envelope format:
 
 ## Reference
 - [Agent2Agent (A2A) Crash Course](https://www.youtube.com/watch?v=mFkw3p5qSuA)
-- [A2A Protocol Introduction](https://a2a-protocol.org/latest/) 
+- [A2A Protocol Introduction](https://a2a-protocol.org/latest/)
+- [A2A Inspector](https://github.com/a2aproject/a2a-inspector)
+- [A2A Inspector App](https://goo.gle/a2a-inspector-app)
+- [Understanding A2A — The protocol for agent collaboration](https://discuss.google.dev/t/understanding-a2a-the-protocol-for-agent-collaboration/189103/1)
 
 --
