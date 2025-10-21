@@ -107,3 +107,6 @@ Reference - MCP Explorer
 - [mcp-for-beginners](https://github.com/microsoft/mcp-for-beginners)
 - [modelcontextprotocol/python-sdk](https://github.com/modelcontextprotocol/python-sdk)
 - [Creating Your First MCP Server](https://www.youtube.com/watch?v=44SUYJ9fqxs)
+
+## Explored MCP Servers
+- [chrome devtools](https://developer.chrome.com/blog/chrome-devtools-mcp)
