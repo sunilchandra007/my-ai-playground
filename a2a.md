@@ -1,12 +1,12 @@
 # 🤖 Agent2Agent (A2A) Protocol
 
-- An **open standard** designed to let API agents **communicate**, **collaborate** and **coordinate** - securely and seamlessly
+- An **open standard** designed to let AI agents **communicate**, **collaborate** and **coordinate** - securely and seamlessly
 - Provides a **common language** for agents built using diverse framework(Goodle ADK) and different vendors, equipped with any tool/MCP 
 
 ---
 
 ## Agent Card: The digital business card
-- Similar to business card
+- Acts as foundation for agent discovery
 - describes what can it do, lists the skills
 - hosted at /.well-known/agent.json
 ---
