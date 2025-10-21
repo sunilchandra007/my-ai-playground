@@ -75,3 +75,4 @@ RAG empowers LLMs to deliver **more reliable**, **up-to-date**, **domain-specifi
 ## Reference
 - https://aws.amazon.com/what-is/retrieval-augmented-generation/
 - https://www.geeksforgeeks.org/nlp/what-is-retrieval-augmented-generation-rag/
+- [Light RAG / RAG Anything](https://github.com/HKUDS)
