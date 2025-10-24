@@ -95,6 +95,7 @@ Clients can also expose primitives to enable richer interactions initiated by se
 
 ```bash
 npx @modelcontextprotocol/inspector
+npx @modelcontextprotocol/inspector npx -y mcp-remote@latest http://localhost:8000/mcp
 ```
 
 ---
