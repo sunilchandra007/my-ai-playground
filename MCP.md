@@ -9,12 +9,11 @@ The **Model Context Protocol (MCP)** is an open standard that defines how AI mod
 - Allows models to **read data** and **execute actions** via a universal connector.
 
 ### 🔗 Transport Mode
-- STDIO (for local communication)
-- HTTP (for remote network communication)
 ```python
+# local communication
 mcp.run(transport="stdio")
-mcp.run(transport="streamable-http")
-mcp.run(transport="http", host="localhost", port=8000)
+# remote network communication
+mcp.run(transport="streamable-http", port=8000)
 ```
 
 ### 🔗 Session State
@@ -44,10 +43,7 @@ Servers can expose the following core primitives:
   def search_flights(origin: str, destination: str) -> dict:
       """Search for flights between two airports"""
       return {
-          "flights": [
-              {"id": "FL123", "origin": origin, "destination": destination, "price": 299},
-              {"id": "FL456", "origin": origin, "destination": destination, "price": 399}
-          ]
+          "flights": [ {"id": "FL123", "origin": origin, "destination": destination, "price": 299} ]
       }
   ```
 
@@ -60,7 +56,6 @@ Servers can expose the following core primitives:
       """Get list of available airports"""
       return {
           "LAX": {"name": "Los Angeles International", "city": "Los Angeles"},
-          "JFK": {"name": "John F. Kennedy International", "city": "New York"},
           "LHR": {"name": "London Heathrow", "city": "London"}
       }
   ```
@@ -103,6 +98,10 @@ npx @modelcontextprotocol/inspector npx -y mcp-remote@latest https://mcp.deepwik
 npx @modelcontextprotocol/inspector --verbose --url https://mcp.deepwiki.com/mcp 
 ```
 
+---
+
+## 🧩 MCP Security
+- https://auth0.com/ai/docs/mcp/auth-for-mcp
 ---
 Reference - MCP Explorer
 
