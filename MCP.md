@@ -100,6 +100,7 @@ npx @modelcontextprotocol/inspector --verbose --url https://mcp.deepwiki.com/mcp
 
 ## 🧩 MCP Security
 - https://auth0.com/ai/docs/mcp/auth-for-mcp
+- [Understanding Authorization in MCP](https://modelcontextprotocol.io/docs/tutorials/security/authorization) 
 ---
 Reference - MCP Explorer
 
