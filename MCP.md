@@ -96,15 +96,17 @@ npx @modelcontextprotocol/inspector npx -y mcp-remote@latest https://mcp.deepwik
 npx @modelcontextprotocol/inspector --verbose --url https://mcp.deepwiki.com/mcp 
 ```
 
-If your client does not yet support remote MCP servers, you can use 
-```
+If your client (ex claude free version) does not yet support remote MCP servers, you can use try this local - remote proxy.
+```json
 {
 	"mcpServers": {
 		"deep-wiki": {
 			"command": "npx",
-			"args": ["mcp-remote", "https://mcp.deepwiki.com/mcp"]
+			"args": ["mcp-remote@latest", "https://mcp.deepwiki.com/mcp"]
 		}
-}```
+}
+```
+
 ---
 
 ## 🧩 MCP Security
