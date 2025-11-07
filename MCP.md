@@ -110,8 +110,9 @@ If your client (ex claude free version) does not yet support remote MCP servers,
 ---
 
 ## 🧩 MCP Security
-- https://auth0.com/ai/docs/mcp/auth-for-mcp
-- [Understanding Authorization in MCP](https://modelcontextprotocol.io/docs/tutorials/security/authorization) 
+- [Auth for MCP](https://auth0.com/ai/docs/mcp/auth-for-mcp)
+- [Understanding Authorization in MCP](https://modelcontextprotocol.io/docs/tutorials/security/authorization)
+- [Curity - Implementing MCP Authorization for APIs](https://curity.io/resources/learn/implementing-mcp-authorization-apis/)
 ---
 Reference - MCP Explorer
 
