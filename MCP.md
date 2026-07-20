@@ -126,5 +126,5 @@ Reference - MCP Explorer
 
 ## Explored MCP Servers
 - [chrome devtools](https://developer.chrome.com/blog/chrome-devtools-mcp)
-- https://fastmcp.me/MCP/Explore
-- 
+- https://gofastmcp.com
+- https://www.mcpjam.com/
