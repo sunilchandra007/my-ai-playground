@@ -89,6 +89,8 @@ Clients can also expose primitives to enable richer interactions initiated by se
 ## 🧩 MCP Inspector
 
 ```bash
+npx @mcpjam/inspector@latest
+
 # mcp-remote + Inspector > local(stdio) to remote mcp client connection
 npx @modelcontextprotocol/inspector npx -y mcp-remote@latest https://mcp.deepwiki.com/mcp
 
