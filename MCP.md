@@ -13,14 +13,12 @@ The **Model Context Protocol (MCP)** is an open standard that defines how AI mod
 # local communication
 mcp.run(transport="stdio")
 # remote network communication
-mcp.run(transport="streamable-http", port=8000)
+mcp.run(transport="http", port=8000)
 ```
 
 ### 🔗 Session State
-- MCP is stateful by default - MCP server maintains session state
 ```python
-mcp = FastMCP("StatefulServer")
-mcp = FastMCP("StatelessServer", stateless_http=True)
+mcp = FastMCP("My MCP Server", auth)
 ```
   
 📖 **Reference**: [modelcontextprotocol.io/introduction](https://modelcontextprotocol.io/introduction)
