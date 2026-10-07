@@ -73,14 +73,8 @@ Each primitive supports:
 ### 🤝 Client-Side Primitives
 Clients can also expose primitives to enable richer interactions initiated by servers:
 
-- **🎯 Sampling**  
-  Servers can request completions from the client’s AI model using `sampling/complete`.
-
 - **💬 Elicitation**  
   Servers can request additional information or confirmation from users via `elicitation/request`.
-
-- **📋 Logging**  
-  Servers can send log messages to clients for debugging and monitoring.
 
 ---
 
