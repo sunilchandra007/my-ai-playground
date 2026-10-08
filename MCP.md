@@ -169,6 +169,48 @@ Returns OAuth configuration such as:
 
 ### MCP Authorization Flow
 
+
+
+### MCP Authorization Flow (with CIMD)
+
+```text
++------------+                  +----------------+                 +---------------+                 +------------+
+| MCP Client |                  | Authorization  |                 | Protected     |                 | MCP Server |
+|            |                  | Server (AS)    |                 | Resource (RS) |                 |            |
++------------+                  +----------------+                 +---------------+                 +------------+
+      |                                   |                                 |                               |
+      | 1. GET /.well-known/oauth-        |                                 |                               |
+      |    protected-resource/mcp         |                                 |                               |
+      |---------------------------------->|                                 |                               |
+      |<----------------------------------|                                 |                               |
+      |      AS Metadata Location         |                                 |                               |
+      |                                   |                                 |                               |
+      | 2. GET Authorization Server       |                                 |                               |
+      |    Metadata                       |                                 |                               |
+      |----------------------------------------------->|                    |                               |
+      |<-----------------------------------------------|                    |                               |
+      |      token_endpoint, auth_endpoint, etc.       |                    |                               |
+      |                                                                         |
+      | 3. Present Client ID Metadata Document (CIMD)                           |
+      |    client_id=https://client.example.com/client.json                     |
+      |------------------------------------------------------------------------>|
+      |                                                                         |
+      | 4. OAuth Authorization Code + PKCE                                      |
+      |------------------------------------------------------------------------>|
+      |<------------------------------------------------------------------------|
+      |                                                                         |
+      | 5. Exchange Code for Access Token                                       |
+      |------------------------------------------------------------------------>|
+      |<------------------------------------------------------------------------|
+      |                     Access Token                                        |
+      |                                                                         |
+      | 6. MCP Request + Bearer Token                                           |
+      |----------------------------------------------------------------------------------------------->|
+      |<-----------------------------------------------------------------------------------------------|
+      |                                  MCP Response                                                  |
+      |                                                                                               |
+```
+
 ```mermaid
 sequenceDiagram
     participant C as MCP Client
