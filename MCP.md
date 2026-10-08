@@ -107,6 +107,105 @@ If your client (ex claude free version) does not yet support remote MCP servers,
 - [Auth for MCP](https://auth0.com/ai/docs/mcp/auth-for-mcp)
 - [Understanding Authorization in MCP](https://modelcontextprotocol.io/docs/tutorials/security/authorization)
 - [Curity - Implementing MCP Authorization for APIs](https://curity.io/resources/learn/implementing-mcp-authorization-apis/)
+
+---
+## 🔐 MCP Authorization
+
+### Client ID Metadata Document (CIMD)
+
+For Remote MCP authorization, OAuth clients can identify themselves using a Client ID Metadata Document (CIMD).
+
+Example:
+
+```text
+client_id=https://client.example.com/client-metadata.json
+```
+
+The metadata document contains OAuth client information such as:
+
+```json
+{
+  "client_id": "https://client.example.com/client-metadata.json",
+  "redirect_uris": [
+    "http://localhost:3000/callback"
+  ],
+  "grant_types": [
+    "authorization_code"
+  ],
+  "token_endpoint_auth_method": "none",
+  "jwks_uri": "https://client.example.com/jwks.json"
+}
+```
+
+**Benefits**
+
+- No dynamic client registration required
+- Client metadata hosted by the client itself
+- Better interoperability for MCP clients
+- Enables trust through signed metadata and JWKS
+
+### Authorization Discovery Endpoints
+
+**Protected Resource Metadata**
+
+```text
+GET /.well-known/oauth-protected-resource/mcp
+```
+
+Returns information about the Authorization Server protecting the MCP resource.
+
+**Authorization Server Metadata**
+
+```text
+GET /.well-known/oauth-authorization-server
+```
+
+Returns OAuth configuration such as:
+
+- authorization_endpoint
+- token_endpoint
+- grant_types_supported
+- code_challenge_methods_supported
+
+### MCP Authorization Flow
+
+```mermaid
+sequenceDiagram
+    participant C as MCP Client
+    participant RS as Protected Resource
+    participant AS as Authorization Server
+    participant M as MCP Server
+
+    C->>RS: GET /.well-known/oauth-protected-resource/mcp
+    RS-->>C: Authorization Server location
+
+    C->>AS: GET /.well-known/oauth-authorization-server
+    AS-->>C: OAuth metadata
+
+    Note over C: Client presents CIMD<br/>client_id=https://client.example.com/client.json
+
+    C->>AS: Authorization Request (PKCE)
+    AS-->>C: Authorization Code
+
+    C->>AS: Exchange Code for Access Token
+    AS-->>C: Access Token
+
+    C->>M: MCP Request + Bearer Token
+    M-->>C: Tools / Resources / Prompts Response
+```
+
+### Key Idea
+
+Remote MCP authorization relies on standard OAuth 2.0:
+
+1. Discover the protected resource metadata.
+2. Discover the authorization server metadata.
+3. Present a Client ID Metadata Document (CIMD).
+4. Complete the OAuth Authorization Code + PKCE flow.
+5. Obtain an access token.
+6. Call MCP tools, resources, and prompts using the bearer token.
+
+Unlike traditional OAuth applications, MCP clients can identify themselves through a hosted Client ID Metadata Document rather than requiring pre-registered client credentials.
 ---
 Reference - MCP Explorer
 
