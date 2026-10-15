@@ -100,6 +100,18 @@ redirect_uri?code=ABC123
 
 ## 3. `/token` - Exchange Code for Access Token
 
+```http
+POST /token
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=authorization_code
+&code=ABC123
+&client_id=https://client.example.com/oauth/client.json
+&redirect_uri=http://127.0.0.1:6274/oauth/callback
+&code_verifier=VERY_LONG_RANDOM_VALUE
+&resource=https://mcp.example.com
+```
+
 ```text
 POST /token
 
@@ -110,6 +122,76 @@ POST /token
 ```
 
 ---
+
+## 4. PKCE Binding
+
+During `/authorize`, the client sends a derived challenge:
+
+```text
+code_challenge = BASE64URL(SHA256(code_verifier))
+```
+
+During `/token`, it sends the original verifier:
+
+```text
+code_verifier = VERY_LONG_RANDOM_VALUE
+```
+
+The Authorization Server verifies that they correspond.
+
+```text
+/authorize
+
+code_challenge
+      ▲
+      │ derived from
+      │
+code_verifier
+
+/token
+```
+
+This binds the authorization-code exchange to the client instance that generated the verifier.
+
+---
+
+## 5. CIMD + Confidential Client
+
+A CIMD document can also describe how a confidential client authenticates to the token endpoint.
+
+For example:
+
+```json
+{
+  "client_id": "https://client.example.com/oauth/client.json",
+  "client_name": "My MCP Client",
+  "redirect_uris": [
+    "https://client.example.com/oauth/callback"
+  ],
+  "token_endpoint_auth_method": "private_key_jwt",
+  "jwks_uri": "https://client.example.com/.well-known/jwks.json"
+}
+```
+
+Conceptually:
+
+```text
+CIMD URL
+   │
+   ├── Who is this client?
+   │
+   └── How should it authenticate?
+             │
+             ▼
+       private_key_jwt
+             │
+             ├── Client signs assertion with private key
+             │
+             └── Authorization Server verifies using published key
+```
+
+---
+
 
 ## Mental Model
 
