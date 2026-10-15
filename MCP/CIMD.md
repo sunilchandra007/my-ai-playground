@@ -42,6 +42,8 @@ The `client_id` inside the document must exactly match the URL of the document.
 
 ## 2. `/authorize` - Get Authorization Code
 
+/authorize is the human-facing part; 
+
 ```http
 GET /authorize?
     response_type=code
@@ -99,6 +101,8 @@ redirect_uri?code=ABC123
 ---
 
 ## 3. `/token` - Exchange Code for Access Token
+
+/token is normally the back-channel protocol exchange.
 
 ```http
 POST /token
