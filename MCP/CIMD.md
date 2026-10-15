@@ -20,9 +20,8 @@ There is no need for the Authorization Server to assign that client ID through a
 
 Example URL:
 
-```text
-https://www.mcpjam.com/.well-known/oauth/client-metadata.json
-```
+[https://www.mcpjam.com/.well-known/oauth/client-metadata.json](https://www.mcpjam.com/.well-known/oauth/client-metadata.json)
+
 
 Example metadata:
 
