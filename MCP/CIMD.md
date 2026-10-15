@@ -153,6 +153,53 @@ code_verifier
 
 This binds the authorization-code exchange to the client instance that generated the verifier.
 
+```text
+CLIENT                                      AUTHORIZATION SERVER
+  │                                                  │
+  │  Generate:                                       │
+  │  code_verifier = XYZ...                          │
+  │                                                  │
+  │  code_challenge =                                │
+  │    BASE64URL(SHA256(XYZ...))                     │
+  │                                                  │
+  │  GET /authorize                                  │
+  │  code_challenge=...                              │
+  │  code_challenge_method=S256                      │
+  ├─────────────────────────────────────────────────►│
+  │                                                  │
+  │                                  Associate with: │
+  │                                  code = CODE123  │
+  │                                  challenge = ... │
+  │                                  method = S256   │
+  │                                                  │
+  │  callback?code=CODE123                           │
+  │◄─────────────────────────────────────────────────┤
+  │                                                  │
+  │  POST /token                                     │
+  │  code=CODE123                                    │
+  │  code_verifier=XYZ...                            │
+  ├─────────────────────────────────────────────────►│
+  │                                                  │
+  │                                  Lookup CODE123  │
+  │                                        │         │
+  │                                        ▼         │
+  │                                  stored challenge│
+  │                                        │         │
+  │                                  Calculate:      │
+  │                                  BASE64URL(      │
+  │                                    SHA256(XYZ...)│
+  │                                  )     │         │
+  │                                        ▼         │
+  │                                     COMPARE      │
+  │                                        │         │
+  │                                     ✓ MATCH      │
+  │                                        │         │
+  │                               Issue access token │
+  │                                                  │
+  │  access_token                                    │
+  │◄─────────────────────────────────────────────────┤
+  │                                                  │
+```
 ---
 
 ## 5. CIMD + Confidential Client
